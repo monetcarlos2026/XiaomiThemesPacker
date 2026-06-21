@@ -1,0 +1,111 @@
+{
+  "supported-platforms": {
+    "squares": "shared"
+  },
+  "fill": {
+    "automatic-gradient": "srgb:1,0.29412,0.29412,1"
+  },
+  "fill-specializations": [
+    {
+      "appearance": "light",
+      "value": {
+        "linear-gradient": [
+          "srgb:1,0.26667,0.26667,1",
+          "srgb:0.41569,0.18824,1,1"
+        ],
+        "orientation": {
+          "start": {
+            "x": 0.5,
+            "y": 0
+          },
+          "stop": {
+            "x": 0.5,
+            "y": 1
+          }
+        }
+      }
+    },
+    {
+      "appearance": "dark",
+      "value": "automatic"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Icon",
+      "opacity": 1,
+      "blend-mode": "normal",
+      "lighting": "combined",
+      "specular": true,
+      "blur-material": 0.5,
+      "translucency": {
+        "enabled": true,
+        "value": 0.6
+      },
+      "shadow": {
+        "kind": "layer-color",
+        "opacity": 0.35
+      },
+      "position": {
+        "scale": 1,
+        "translation-in-points": [
+          0,
+          0
+        ]
+      },
+      "specular-specializations": [
+        {
+          "appearance": "light",
+          "value": true
+        }
+      ],
+      "layers": [
+        {
+          "name": "theme-01",
+          "image-name": "theme-01.svg",
+          "is-glass": true,
+          "opacity": 1,
+          "blend-mode": "normal",
+          "position": {
+            "scale": 1,
+            "translation-in-points": [
+              0,
+              0
+            ]
+          },
+          "asset-mirroring-specializations": [
+            {
+              "appearance": "base",
+              "idiom": "iOS",
+              "value": {
+                "mirrorable": false
+              }
+            }
+          ],
+          "blend-mode-specializations": [
+            {
+              "appearance": "light",
+              "value": "normal"
+            },
+            {
+              "appearance": "dark",
+              "value": "normal"
+            }
+          ],
+          "image-name-specializations": [
+            {
+              "appearance": "dark",
+              "value": "theme-01.svg"
+            }
+          ],
+          "fill-specializations": [
+            {
+              "appearance": "dark",
+              "value": "none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
