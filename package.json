@@ -1,6 +1,6 @@
 {
   "name": "xiaomi-theme-packer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Xiaomi Theme Packer desktop app",
   "main": "dist-electron/main.js",
   "author": "",
