@@ -1,6 +1,6 @@
 {
   "name": "xiaomi-theme-packer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Xiaomi Theme Packer desktop app",
   "main": "dist-electron/main.js",
   "author": "",
@@ -57,7 +57,6 @@
     "files": [
       "dist/**/*",
       "dist-electron/**/*",
-      "third_party/**/*",
       "package.json",
       "!**/*.map",
       "!**/*.md",
@@ -73,6 +72,10 @@
       {
         "from": "build/icon.ico",
         "to": "build/icon.ico"
+      },
+      {
+        "from": "third_party",
+        "to": "third_party"
       }
     ],
     "win": {

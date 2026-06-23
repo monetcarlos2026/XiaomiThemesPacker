@@ -24,7 +24,13 @@ function findAdb(context: AdbContext) {
     path.join(process.env.ANDROID_HOME || "", "platform-tools", "adb.exe"),
     "adb"
   ];
-  return candidates.find((candidate) => candidate === "adb" || fs.existsSync(candidate)) || "adb";
+  return (
+    candidates.find((candidate) => {
+      if (candidate === "adb") return true;
+      if (candidate.includes(`${path.sep}app.asar${path.sep}`)) return false;
+      return fs.existsSync(candidate);
+    }) || "adb"
+  );
 }
 
 export function runAdb(context: AdbContext, args: string[], timeoutMs = 30000): Promise<AdbResult> {

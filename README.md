@@ -4,10 +4,10 @@ Xiaomi Theme Packer 是一个用于小米 / MIUI / HyperOS 主题工程的 Windo
 
 ## 下载
 
-最新版本：`v0.1.1`
+最新版本：`v0.1.2`
 
 - [下载 Windows 安装包](https://github.com/Xavier-nai/XiaomiThemesPacker/releases/latest)
-- 当前安装包文件名：`Xiaomi-Theme-Packer-0.1.1.exe`
+- 当前安装包文件名：`Xiaomi-Theme-Packer-0.1.2.exe`
 
 ## 主要功能
 
